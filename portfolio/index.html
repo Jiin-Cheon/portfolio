@@ -1,66 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>fashionatedeveloper</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="navbar-logo">
-            <img src="#" alt="logo">  <!--로고 삽입할 이미지 태그-->
-            <h1>
-                <a href="index.html">
-                    fashionate developer
-                </a>
-            </h1>
+        <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
         </div>
 
-        <!--오른쪽의 드랍 다운 메뉴-->
-        <div>
-            <button type="button" arai-label="open menu" class="dropdown-button">
-                <img src="assets/menu-icon.png" alt="menu">
-            </button>
-        </div>
 
-        <div class="dropdown-menu">
-            <ul>
-                <li><a href="#">About me</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact me</a></li>
-            </ul>
-        </div>
 
-        <div class="dropdown-menu-links">
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="#" alt="twitter">
-                    </a>
-                </li>
+        <div class="swiper-pagination"></div>
+        <img class="swiper-button-prev" src="assets/arrow-left.svg">
+        <img class="swiper-button-next" src="assets/arrow-right.svg">
+    </div>
 
-                <li>
-                    <a href="#">
-                        <img src="#" alt="facebook">
-                    </a>
-                </li>
 
-                <li>
-                    <a href="#">
-                        <img src="#" alt="instagram">
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </header>
-    
 
-    <div class="business-card"></div>
-        <div class="content">
-            <div class="profile-image">
-              <img src="assets/profile.jpg">
-            </div>
-        </div>
+    <script src="swiper.js"></script>
 </body>
 </html>
