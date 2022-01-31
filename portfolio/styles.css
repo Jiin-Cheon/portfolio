@@ -1,73 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
 body {
-    margin: 0;
-    padding: 0;
-    background: url(assets/bg.jpg);
-    background-size: cover;
-    background-position: center;
-    min-height:100vh;
+  position: relative;
+  height: 100%;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
-
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-}
-
-ul {
-    list-style: none;
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
 }
 
 .dropdown-button {
-    width: 70px;
-    height: 70px;
-    margin:none;
-    border:none;
-    padding:none;
-    background-color: white;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    
+  width: 70px;
+  height: 70px;
+  border:none;
+  background-color: white;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  
 }
 
-.dropdown-button img {
-    width: 50%;
-  }
+.swiper {
+  width: 100%;
+  height: 100%;
+}
 
-  .business-card {
-      position: relative;
-      width: 500px;
-      height: 300px;
-      background-color: (255,255,255,1);
-      border-radius: 20px;
-      box-shadow: 0 25px 25px rgba(0,0,0,0.1);
-      backdrop-filter: blur(10px);
-      border-top: 1px solid rgba(255,255,255,0.5);
-      transition: 1s;
-  }
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+}
 
-.business-card:hover
+.swiper-button-disabled
 {
-    transform: scale(1.2);
-    background: rgba(255, 255, 255, 0.6);
+    display:none;
 }
 
-.business-card .content
-{
-    position: relative;
-    display: flex;
+.swiper-pagination-bullet-active {
+    background-color: black;
 }
 
-.business-card .content .profile-image
-{
-    position:relative;
-    display:flex;
-    width:120px;
-    height:120px;
-}
